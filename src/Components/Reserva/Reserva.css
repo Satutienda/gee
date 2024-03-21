@@ -1,0 +1,61 @@
+.libre {
+  background-color: #d8f3dc;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 7px;
+  font-family: "Segoe UI";
+  font-size: 15px;
+  width: 180px;
+  height: 90px;
+}
+.libre div {
+  color: white;
+}
+@media only screen and (max-width: 700px) {
+  .libre {
+    width: 150px;
+    height: auto;
+  }
+}
+
+.Check input[type="checkbox"] {
+  width: 25px;
+  height: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.reservado {
+  background-color: #f08080;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 7px;
+  font-family: "Segoe UI";
+  font-size: 15px;
+  width: 180px;
+  height: 90px;
+  position: relative;
+}
+@media only screen and (max-width: 700px) {
+  .reservado {
+    width: 150px;
+    height: auto;
+  }
+}
+.reservado div {
+  color: white;
+}
+
+.Hora {
+  color: #7400b8;
+}
+
+.Hora {
+  color: #9ef01a;
+  background-color: #001f54be;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+}

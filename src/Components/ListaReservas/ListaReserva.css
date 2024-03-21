@@ -1,0 +1,63 @@
+.reservas {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: transparent;
+  padding: 2%;
+  border-top-left-radius: 10px ;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.908);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  
+  margin-right: 50px;
+  margin-left: 50px;
+  width: 90%;
+  height: 800px;
+  background: rgba(255, 255, 255, 0.11); /* Fondo blanco semitransparente */
+  box-shadow: 0 4px 6px rgba(141, 135, 135, 0.342); /* Sombra suave */
+  backdrop-filter: blur(10px); /* Efecto de desenfoque al contenido detrás del elemento */
+  padding: 20px; 
+  margin-bottom: 50px;
+
+  
+  
+}
+
+.Listadoreservas {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 10px;
+
+
+  
+  padding: 5px;
+  
+  
+}
+
+@media only screen and (max-width: 700px) {
+  /* Ajuste de estilos para la lista de reservas en dispositivos móviles */
+  .Listadoreservas {
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(10, 1fr); 
+    margin-bottom: 200px;
+    margin-right: 50px;
+    padding: 0;
+    
+   
+    
+    
+  }
+  .reservas{
+   
+    margin-top: 0;
+    width: 100%;
+    height: auto;
+    
+    
+    
+  }
+}

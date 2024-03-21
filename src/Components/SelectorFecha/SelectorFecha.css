@@ -1,0 +1,53 @@
+.selectorFecha {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+  
+  
+}
+
+.selectorFecha input {
+  font-size: 25px;
+  border: 1px solid #384d6a;
+  font-family: 'Segoe UI';
+  font-style: inherit;
+  font-weight: 500;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  cursor: pointer;
+  margin-right: 7.4%;
+  
+}
+@media only screen and (max-width: 700px) {
+  
+  .selectorFecha  {
+    
+    position: sticky; 
+    top: 0; 
+    z-index: 2000; 
+    border-radius: 10px;
+     margin: 10px;
+     margin-bottom: 0px;
+  }
+  .selectorFecha input{
+    margin: 0px;
+    
+
+  }
+}
+
+@media only screen and (max-width: 700px) {
+ 
+  .Titulo {
+    flex-direction: column;
+  }
+}
+
+#fecha:focus {
+  outline: none; 
+  border: 1px solid #384d6a; /* Establece un nuevo contorno con el color deseado */
+}
+
