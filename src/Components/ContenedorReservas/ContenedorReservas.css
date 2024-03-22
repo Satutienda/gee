@@ -48,7 +48,7 @@
     margin-top: 10px;
   }
   .Titulo h4 {
-    color: #9cf6f66f;
+    color: #9cf6f6da;
     font-family: "Segoe UI";
     margin-left: 0px;
   }
@@ -64,7 +64,7 @@
   color: white;
   font-family: "Segoe UI";
   font-size: 40px;
-  background: linear-gradient(90deg, #0a0c96a9, #ccff33b3, #0a0c96a9);
+  background: linear-gradient(90deg, #0a0c96bd, #ccff33d3, #0a0c96bd);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;

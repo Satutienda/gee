@@ -126,63 +126,60 @@ const ActualizarReservas = ({ reservasSeleccionadas, onUpdateReservas }) => {
                 Envía la reserva
             </li>
 
+            
+                <form onSubmit={handleSubmit} className='formuActualizarReserv'>
 
-            <form onSubmit={handleSubmit}>
+                    <select className="inputReservaSeccion"
+                        name="seccion"
+                        value={datosFormulario.seccion}
+                        onChange={handleChange}
+                    >   <option value="">Elije su seccion</option>
+                        <option value="Aditivos">Aditivos</option>
+                        <option value="Adm.-facturacion">Adm.-facturacion</option>
+                        <option value="Administracion">Administracion</option>
+                        <option value="Calidad">Calidad</option>
+                        <option value="Choferes">Choferes</option>
+                        <option value="Compras">Compras</option>
+                        <option value="Deposito">Deposito</option>
+                        <option value="Descongelado">Descongelado</option>
+                        <option value="Despacho">Despacho</option>
+                        <option value="Despacho-camara y preparacion">Despacho-camara y preparacion</option>
+                        <option value="Despacho-entrega">Despacho-entrega</option>
+                        <option value="Embutido">Embutido</option>
+                        <option value="Facturacion-balanza">Facturacion-balanza</option>
+                        <option value="Feteado">Feteado</option>
+                        <option value="Hornos tarde">Hornos tarde</option>
+                        <option value="I+d">I+d</option>
+                        <option value="Jamoneria">Jamoneria</option>
+                        <option value="Limpieza">Limpieza</option>
+                        <option value="Limpieza tarde">Limpieza tarde</option>
+                        <option value="Logistica">Logistica</option>
+                        <option value="Mantenimiento">Mantenimiento</option>
+                        <option value="Mensuales">Mensuales</option>
+                        <option value="Produccion">Produccion</option>
+                        <option value="Produccion noche">Produccion noche</option>
+                        <option value="Produccion tarde">Produccion tarde</option>
+                        <option value="Recursos humanos">Recursos humanos</option>
+                        <option value="Secadero">Secadero</option>
+                        <option value="Seguridad">Seguridad</option>
+                        <option value="Serenos">Serenos</option>
+                        <option value="Sistemas">Sistemas</option>
+                        <option value="Vacio">Vacio</option>
+                        <option value="Ventas">Ventas</option>
+                    </select>
 
-                <select className="inputReservaSeccion"
-                    name="seccion"
-                    value={datosFormulario.seccion}
-                    onChange={handleChange}
-                >   <option value="">Elije su seccion</option>
-                    <option value="Aditivos">Aditivos</option>
-                    <option value="Adm.-facturacion">Adm.-facturacion</option>
-                    <option value="Administracion">Administracion</option>
-                    <option value="Calidad">Calidad</option>
-                    <option value="Choferes">Choferes</option>
-                    <option value="Compras">Compras</option>
-                    <option value="Deposito">Deposito</option>
-                    <option value="Descongelado">Descongelado</option>
-                    <option value="Despacho">Despacho</option>
-                    <option value="Despacho-camara y preparacion">Despacho-camara y preparacion</option>
-                    <option value="Despacho-entrega">Despacho-entrega</option>
-                    <option value="Embutido">Embutido</option>
-                    <option value="Facturacion-balanza">Facturacion-balanza</option>
-                    <option value="Feteado">Feteado</option>
-                    <option value="Hornos tarde">Hornos tarde</option>
-                    <option value="I+d">I+d</option>
-                    <option value="Jamoneria">Jamoneria</option>
-                    <option value="Limpieza">Limpieza</option>
-                    <option value="Limpieza tarde">Limpieza tarde</option>
-                    <option value="Logistica">Logistica</option>
-                    <option value="Mantenimiento">Mantenimiento</option>
-                    <option value="Mensuales">Mensuales</option>
-                    <option value="Produccion">Produccion</option>
-                    <option value="Produccion noche">Produccion noche</option>
-                    <option value="Produccion tarde">Produccion tarde</option>
-                    <option value="Recursos humanos">Recursos humanos</option>
-                    <option value="Secadero">Secadero</option>
-                    <option value="Seguridad">Seguridad</option>
-                    <option value="Serenos">Serenos</option>
-                    <option value="Sistemas">Sistemas</option>
-                    <option value="Vacio">Vacio</option>
-                    <option value="Ventas">Ventas</option>
-                </select>
+                    <input
+                        type="text"
+                        name="reserVapor"
+                        value={datosFormulario.reserVapor}
+                        onChange={handleChange}
+                        placeholder="Ingresa quien reserva"
+                        className="inputReservaNombre"
+                    />
 
+                    <button className='BotonReserva' type="submit"> <i className="material-icons" style={{ color: '#ccff33' }}>send</i></button>
+                </form>
 
-
-
-                <input
-                    type="text"
-                    name="reserVapor"
-                    value={datosFormulario.reserVapor}
-                    onChange={handleChange}
-                    placeholder="Ingresa quien reserva"
-                    className="inputReservaNombre"
-                />
-
-
-                <button className='BotonReserva' type="submit"> <i className="material-icons" style={{ color: '#ccff33' }}>send</i></button>
-            </form>
         </div>
     );
 };

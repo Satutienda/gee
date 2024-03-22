@@ -8,19 +8,22 @@ export async function obtenerEspaciosPorSeccion(seccion) {
             throw new Error('Error al obtener los espacios');
         }
 
-        const datos = respuesta.data;
+        let datos = respuesta.data;
 
-        if (seccion === "") { // Corregido: seccion === ""
-            return datos; // Retorna todos los espacios si no se proporciona ninguna sección
-        } else {
-            const espaciosFiltrados = datos.filter(espacio => espacio.seccion === seccion);
-            return espaciosFiltrados;
+        if (seccion !== "") { 
+            datos = datos.filter(espacio => espacio.seccion === seccion);
         }
+
+        
+        datos.sort((a, b) => a.NumReser - b.NumReser);
+
+        return datos;
     } catch (error) {
         console.error('Error al obtener los espacios:', error);
         throw error;
     }
 }
+
 
 
 
